@@ -31,7 +31,6 @@ namespace pryDealbera_ControlTiempo
         private void panelTrabajo_Paint(object sender, PaintEventArgs e)
         {
             timerTiempoTrabajo.Enabled = true;
-            lblLugares.Text = e.Location.ToString();
         }
 
         private void btnAuditar_Click(object sender, EventArgs e)
@@ -44,8 +43,17 @@ namespace pryDealbera_ControlTiempo
                 //contar y sumar la cantidad de posiciones sql
                 StreamWriter srAuditar = new StreamWriter(ofdArchivoCoordenadas.FileName);
 
-                while (!srAuditar)
+               /* while (!srAuditar.EndOfStream) 
+                {
+                    lstCoordenadas.Items.Add(srAuditar.
+                }*/
             }
+        }
+
+        private void timerTiempoTrabajo_Tick(object sender, EventArgs e)
+        {
+            tiempoTrabajo++;
+            lblTiempoTrabajo.Text = tiempoTrabajo.ToString();
         }
     }
 }

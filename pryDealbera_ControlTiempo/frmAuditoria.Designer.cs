@@ -92,17 +92,21 @@
             this.panelTrabajo.Controls.Add(this.lstCoordenadas);
             this.panelTrabajo.Location = new System.Drawing.Point(12, 12);
             this.panelTrabajo.Name = "panelTrabajo";
-            this.panelTrabajo.Size = new System.Drawing.Size(776, 338);
+            this.panelTrabajo.Size = new System.Drawing.Size(776, 341);
             this.panelTrabajo.TabIndex = 5;
             this.panelTrabajo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTrabajo_Paint);
             // 
             // lstCoordenadas
             // 
             this.lstCoordenadas.FormattingEnabled = true;
-            this.lstCoordenadas.Location = new System.Drawing.Point(15, 15);
+            this.lstCoordenadas.Location = new System.Drawing.Point(-2, 0);
             this.lstCoordenadas.Name = "lstCoordenadas";
-            this.lstCoordenadas.Size = new System.Drawing.Size(741, 303);
+            this.lstCoordenadas.Size = new System.Drawing.Size(776, 342);
             this.lstCoordenadas.TabIndex = 6;
+            // 
+            // timerTiempoTrabajo
+            // 
+            this.timerTiempoTrabajo.Tick += new System.EventHandler(this.timerTiempoTrabajo_Tick);
             // 
             // frmAuditoria
             // 
